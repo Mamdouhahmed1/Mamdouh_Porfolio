@@ -50,14 +50,14 @@ export const metadata: Metadata = {
     title: `${site.name} — Visual Storyteller & Concept Artist`,
     description:
       "Background, concept, character and storyboard art for animation and film.",
-    images: ["/artwork/hero/cover.webp"],
+    images: ["/artwork/hero/cover.PNG"],
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} — Visual Storyteller`,
     description:
       "Background, concept, character and storyboard art for animation and film.",
-    images: ["/artwork/hero/cover.webp"],
+    images: ["/artwork/hero/cover.PNG"],
   },
   robots: { index: true, follow: true },
 };
