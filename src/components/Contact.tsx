@@ -120,7 +120,7 @@ export function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...data,
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          access_key: b920f58e-358a-43ea-8c0f-4b7cd32408e7,
           subject: `New enquiry — ${data.projectType} (${data.name})`,
           from_name: "Portfolio Contact",
         }),
