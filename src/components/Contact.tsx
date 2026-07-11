@@ -115,15 +115,10 @@ export function Contact() {
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form).entries());
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...data,
-          access_key: "b920f58e-358a-43ea-8c0f-4b7cd32408e7",
-          subject: `New enquiry — ${data.projectType} (${data.name})`,
-          from_name: "Portfolio Contact",
-        }),
+        body: JSON.stringify(data),
       });
       const json = await res.json();
       if (!json.success) {
