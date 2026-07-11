@@ -121,8 +121,8 @@ export function Contact() {
         body: JSON.stringify(data),
       });
       const json = await res.json();
-      if (!json.success) {
-        throw new Error(json?.message || "Something went wrong.");
+      if (!json.ok) {
+        throw new Error(json?.error || "Something went wrong.");
       }
       setStatus("success");
       form.reset();
