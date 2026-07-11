@@ -28,7 +28,7 @@ export function Hero() {
       {/* Monochrome base image */}
       <motion.div style={{ y: yImg, scale: scaleImg }} className="absolute inset-0">
         <Image
-          src="/artwork/hero/cover.PNG"
+          src="/artwork/hero/cover.webp"
           alt="Cover artwork"
           fill
           priority
